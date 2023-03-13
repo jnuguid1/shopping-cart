@@ -1,0 +1,14 @@
+{
+  "emmet.preferences": {
+
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "jsx": {
+      "attr_quotes": "single",
+      "self_closing_tag": true,
+    },
+  },
+}
