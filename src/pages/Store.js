@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ProductsGrid from '../components/ProductsGrid';
 import CategoryList from '../components/CategoryList';
 

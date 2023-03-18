@@ -10,8 +10,10 @@ const Product = (props) => {
       <img src={require(`../assets/${product.image}.png`)} alt='Product'/>
       <h2>{product.name}</h2>
       <p>{product.category}</p>
-      <p>{product.price}</p>
-      <button type='button'>Add to cart</button>
+      <p>CA${product.price}</p>
+      <button type='button' onClick={e => props.onAddToCart(product, e)}>
+        Add to cart
+      </button>
     </div>
   )
 };

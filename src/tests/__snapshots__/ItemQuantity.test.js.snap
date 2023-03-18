@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item quantity component renders 0 quantity 1`] = `
+<div>
+  <div
+    class="item-quantity"
+  >
+    <p>
+      Quantity 
+    </p>
+    <button
+      type="button"
+    >
+      -
+    </button>
+    <p
+      data-testid="quantity"
+    />
+    <button
+      type="button"
+    >
+      +
+    </button>
+  </div>
+</div>
+`;

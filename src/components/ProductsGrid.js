@@ -8,7 +8,7 @@ const ProductsGrid = (props) => {
     <div className='items-grid'>
       {props.products.map(product => {
         return (
-          <Link key={uniqid()} to={`/store/${product.id}`}>
+          <Link key={product.id} to={`/store/${product.id}`}>
             <ProductCard
               name={product.name}
               price={product.price}

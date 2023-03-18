@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
+  const [itemQuantity, setItemQuantity] = useState(0);
+
+  useEffect(() => {
+    const quantities = cartItems.map(item => item.quantity);
+    setItemQuantity(quantities.reduce((sum, quantity) => sum + quantity, 0));
+  }, [cartItems])
+
   return (
-    <div>
+    <nav className='nav-bar'>
       <h1>Warrior's Surplus</h1>
-      <ul>
+      <ul className='nav-list'>
         <li>
           <Link to='/'>Home</Link>
         </li>
@@ -13,10 +20,10 @@ const Navbar = () => {
           <Link to='/store'>Store</Link>
         </li>
         <li>
-          <Link to='/cart'>Cart</Link>
+          <Link to='/cart'>Cart {itemQuantity}</Link>
         </li>
       </ul>
-    </div>
+    </nav>
 
   );
 };
