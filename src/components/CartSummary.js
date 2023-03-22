@@ -10,12 +10,25 @@ const CartSummary = ({items}) => {
 
   return (
     <div className='cart-summary'>
-      <h3>Summary</h3>
-      <p>Subtotal: ${subtotal}</p>
-      <p>Delivery Fees: $0</p>
-      <p>Taxes: ${Math.round(subtotal*TAX*100)/100}</p>
+      <h3>Order Summary</h3>
+      <div className='info-row'>
+        <p>Subtotal</p>
+        <p>${(Math.round(subtotal*100)/100).toFixed(2)}</p>
+      </div>
+      <div className='info-row'>
+        <p>Delivery Fees</p>
+        <p>$0</p>
+      </div>
+      <div className='info-row'>
+        <p>Taxes</p>
+        <p>${(Math.round(subtotal*TAX*100)/100).toFixed(2)}</p>
+      </div>
       <hr/>
-      <p>Total: ${Math.round(subtotal*1.13*100)/100}</p>
+      <div className='info-row'>
+        <p>Total</p>
+        <p>${(Math.round(subtotal*1.13*100)/100).toFixed(2)}</p>
+      </div>
+      <button className='action-button' type='button'>Checkout</button>
     </div>
   );
 };

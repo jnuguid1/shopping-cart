@@ -3,7 +3,7 @@ import ProductsGrid from '../components/ProductsGrid';
 
 const Home = ({featuredItems}) => {
   return (
-    <div>
+    <div className='page'>
       <h2>Featured Items</h2>
       <ProductsGrid products={featuredItems} />
     </div>

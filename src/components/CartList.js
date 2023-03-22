@@ -5,10 +5,10 @@ const CartList = (props) => {
   const hasItems = props.items.length > 0;
 
   return (
-    <div>
+    <>
       { hasItems ?
         <ul className='cart-list'>
-          {props.items.map(item => {
+          {props.items.reverse().map(item => {
             return (
               <li key={item.id}>
                 <CartItem
@@ -23,9 +23,9 @@ const CartList = (props) => {
             )
           })}
         </ul>
-        : <p>Your cart is empty</p>
+        : <p className='cart-empty'>Your cart is empty</p>
       }
-    </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import CartDrawer from './components/CartDrawer';
 import Cart from './pages/Cart';
 import Home from './pages/Home';
 import Store from './pages/Store';
@@ -13,7 +14,7 @@ const App = () => {
       name: 'Hayabusa T3 Boxing Gloves',
       price: 199.00,
       category: 'Boxing Gloves',
-      image: 'placeholder',
+      image: 'hayabusa-t3.jpg',
       id: uniqid(),
       code: 'gloves',
     },
@@ -21,7 +22,7 @@ const App = () => {
       name: 'Everlast Pro Style Elite Training Gloves',
       price: 32.99,
       category: 'Boxing Gloves',
-      image: 'placeholder',
+      image: 'everlast-pro-training.jpg',
       id: uniqid(),
       code: 'gloves',
     },
@@ -29,7 +30,7 @@ const App = () => {
       name: 'UNIQ Khaki Velcro Boxing Gloves',
       price: 102,
       category: 'Boxing Gloves',
-      image: 'placeholder',
+      image: 'uniq-khaki-velcro.jpg',
       id: uniqid(),
       code: 'gloves',
     },
@@ -37,7 +38,7 @@ const App = () => {
       name: 'RDX Training Boxing Gloves',
       price: 53.99,
       category: 'Boxing Gloves',
-      image: 'placeholder',
+      image: 'kara-training.jpg',
       id: uniqid(),
       code: 'gloves',
     },
@@ -45,7 +46,7 @@ const App = () => {
       name: 'Venum Challenge 2.0 Boxing Gloves',
       price: 68.87,
       category: 'Boxing Gloves',
-      image: 'placeholder',
+      image: 'venum-challenger.jpg',
       id: uniqid(),
       code: 'gloves',
     },
@@ -53,7 +54,7 @@ const App = () => {
       name: 'Verace Black & Gold Boxing Gloves',
       price: 1411,
       category: 'Boxing Gloves',
-      image: 'placeholder',
+      image: 'versace-black-and-gold.jpg',
       id: uniqid(),
       code: 'gloves',
     },
@@ -61,7 +62,7 @@ const App = () => {
       name: 'Adidas Men\'s HVC 2',
       price: 69.52,
       category: 'Boxing Shoes',
-      image: 'placeholder',
+      image: 'adidas-hvc.jpg',
       id: uniqid(),
       code: 'shoes',
     },
@@ -69,7 +70,7 @@ const App = () => {
       name: 'Viper Boxing Shoes',
       price: 250,
       category: 'Boxing Shoes',
-      image: 'placeholder',
+      image: 'viper-shoes.png',
       id: uniqid(),
       code: 'shoes',
     },
@@ -77,7 +78,7 @@ const App = () => {
       name: 'Everlast Elite Black High Top Boxing Shoes',
       price: 149.99,
       category: 'Boxing Shoes',
-      image: 'placeholder',
+      image: 'everlast-elite-black-high-top.jpg',
       id: uniqid(),
       code: 'shoes',
     },
@@ -85,7 +86,7 @@ const App = () => {
       name: 'ASICS Matflex 6',
       price: 89.99,
       category: 'Boxing Shoes',
-      image: 'placeholder',
+      image: 'asics-matflex-6.webp',
       id: uniqid(),
       code: 'shoes',
     },
@@ -93,7 +94,7 @@ const App = () => {
       name: 'Rival RSX-Genesis Boxing Boots 2.0',
       price: 74.99,
       category: 'Boxing Shoes',
-      image: 'placeholder',
+      image: 'rival-rsx-genesis.webp',
       id: uniqid(),
       code: 'shoes',
     },
@@ -101,7 +102,7 @@ const App = () => {
       name: 'Venum Elite Boxing Shoes',
       price: 150.06,
       category: 'Boxing Shoes',
-      image: 'placeholder',
+      image: 'venum-elite.webp',
       id: uniqid(),
       code: 'shoes',
     },
@@ -109,7 +110,7 @@ const App = () => {
       name: 'Shock Doctor Core Supporter with Bio-flex Cup',
       price: 25,
       category: 'No-Foul & Groin Protectors',
-      image: 'placeholder',
+      image: 'core-supporter.webp',
       id: uniqid(),
       code: 'groin'
     },
@@ -117,7 +118,7 @@ const App = () => {
       name: 'Hayabusa Steel Armored Cup',
       price: 35,
       category: 'No-Foul & Groin Protectors',
-      image: 'placeholder',
+      image: 'hayabusa-steel-armored-cup.png',
       id: uniqid(),
       code: 'groin'
     },
@@ -125,7 +126,7 @@ const App = () => {
       name: 'Rival RNFL 10 Pro 360 Protector',
       price: 105,
       category: 'No-Foul & Groin Protectors',
-      image: 'placeholder',
+      image: 'rival-rnfl-10-pro.jpg',
       id: uniqid(),
       code: 'groin'
     },
@@ -133,7 +134,7 @@ const App = () => {
       name: 'Shock Doctor Ultra Pro Supporter',
       price: 40,
       category: 'No-Foul & Groin Protectors',
-      image: 'placeholder',
+      image: 'shock-doctor-ultra-pro-supporter_.jpg',
       id: uniqid(),
       code: 'groin'
     },
@@ -141,7 +142,7 @@ const App = () => {
       name: 'Rival RHG60 Workout Headgear 2.0',
       price: 65,
       category: 'Head Gear',
-      image: 'placeholder',
+      image: 'rival-rhg60.webp',
       id: uniqid(),
       code: 'headGear',
     },
@@ -149,7 +150,7 @@ const App = () => {
       name: 'Hayabusa T3 Headgear',
       price: 150,
       category: 'Head Gear',
-      image: 'placeholder',
+      image: 'hayabusa-t3-helmet.jpg',
       id: uniqid(),
       code: 'headGear',
     },
@@ -157,7 +158,7 @@ const App = () => {
       name: 'Velo Competition Headgear',
       price: 135,
       category: 'Head Gear',
-      image: 'placeholder',
+      image: 'velo-headgear.jpg',
       id: uniqid(),
       code: 'headGear',
     },
@@ -165,7 +166,7 @@ const App = () => {
       name: 'Rival Mexican Handwraps 180',
       price: 12,
       category: 'Hand Wraps',
-      image: 'placeholder',
+      image: 'mexican-handwraps.webp',
       id: uniqid(),
       code: 'handWraps',
     },
@@ -173,7 +174,7 @@ const App = () => {
       name: 'Hayabusa Quick Gelwraps',
       price: 30,
       category: 'Hand Wraps',
-      image: 'placeholder',
+      image: 'hayabusa-quick-gelwraps.jpg',
       id: uniqid(),
       code: 'handWraps',
     },
@@ -181,7 +182,7 @@ const App = () => {
       name: 'Fox40 Mouthguard',
       price: 3,
       category: 'Mouth Guards',
-      image: 'placeholder',
+      image: 'fox40-mouthguard.jpg',
       id: uniqid(),
       code: 'mouthGuards',
     },
@@ -189,7 +190,7 @@ const App = () => {
       name: 'Leone Topguard Mouth Guard',
       price: 25,
       category: 'Mouth Guards',
-      image: 'placeholder',
+      image: 'leone-mouthguard.webp',
       id: uniqid(),
       code: 'mouthGuards',
     },
@@ -197,7 +198,7 @@ const App = () => {
       name: 'Hayabusa Combat Mouth Guard',
       price: 20,
       category: 'Mouth Guards',
-      image: 'placeholder',
+      image: 'hayabusa-combat-mouthguard_.jpg',
       id: uniqid(),
       code: 'mouthGuards',
     },
@@ -205,7 +206,7 @@ const App = () => {
       name: 'Twins SR2 Heavy Jump Rope',
       price: 40,
       category: 'Jump Rope',
-      image: 'placeholder',
+      image: 'sr2-heavy-rope.webp',
       id: uniqid(),
       code: 'jumpRope',
     },
@@ -213,7 +214,7 @@ const App = () => {
       name: 'Rival Plastic Jump Rope 9FT',
       price: 15,
       category: 'Jump Rope',
-      image: 'placeholder',
+      image: 'rival-plastic-jump-rope.webp',
       id: uniqid(),
       code: 'jumpRope',
     },
@@ -221,7 +222,7 @@ const App = () => {
       name: 'Ring to Cage Plastic Jump Rope',
       price: 12,
       category: 'Jump Rope',
-      image: 'placeholder',
+      image: 'cage-plastic-jump-rope.jpg',
       id: uniqid(),
       code: 'jumpRope',
     },
@@ -250,6 +251,8 @@ const App = () => {
 
   const [currentProducts, setCurrentProducts] = useState(getItems('gloves'));
   const [cartItems, setCartItems] = useState([]);
+  const [quantityInput, setQuantityInput] = useState(1);
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleCategoryChange = (event) => {
     setCurrentProducts(categories[event.target.getAttribute('id')].products);
@@ -261,8 +264,8 @@ const App = () => {
         if (product.id === item.id) {
           return {
             ...item, 
-            quantity: item.quantity + 1, 
-            input: item.quantity + 1 
+            quantity: item.quantity + quantityInput, 
+            input: item.quantity + quantityInput 
           };
         } else {
           return item;
@@ -271,10 +274,11 @@ const App = () => {
     } else {
       setCartItems(cartItems.concat({
         ...product,
-        quantity: 1,
-        input: 1
+        quantity: quantityInput,
+        input: quantityInput
       }));
     }
+    toggleDrawer();
   };
 
   const handleRemoveFromCart = (product, e) => {
@@ -320,10 +324,33 @@ const App = () => {
       setCartItems(newItems);
     }
   };
+  
+  const handleQuantityInputChange = (amount) => {
+    if (amount >= 0) setQuantityInput(parseInt(amount));
+  };
+
+  const toggleDrawer = () => {
+    setDrawerOpen(!drawerOpen);
+
+  }
 
   return (
     <div>
       <BrowserRouter>
+        <div 
+          className={`${drawerOpen ? 'page-mask' : ''}`}
+          onClick={toggleDrawer}
+        >
+        </div>
+        <CartDrawer 
+          isOpen={drawerOpen} 
+          items={cartItems}
+          onQuantityIncrement={handleQuantityIncrement}
+          onQuantityDecrement={handleQuantityDecrement}
+          onQuantityChange={handleQuantityChange}
+          onRemoveFromCart={handleRemoveFromCart}
+          toggleDrawer={toggleDrawer}
+        />
         <Navbar cartItems={cartItems} />
         <Routes>
           <Route path='/' element={<Home featuredItems={featuredItems} />} />
@@ -341,7 +368,12 @@ const App = () => {
             path='/store/:id'
             element={
               <Product 
-                products={products} onAddToCart={handleAddToCart} />
+                products={products}
+                quantityInput={quantityInput}
+                onQuantityChange={handleQuantityInputChange}
+                onAddToCart={handleAddToCart}
+                isDrawerOpen={drawerOpen}
+              />
             } 
           />
           <Route 

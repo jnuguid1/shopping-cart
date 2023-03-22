@@ -1,6 +1,5 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-import uniqid from 'uniqid';
 import { Link } from 'react-router-dom';
 
 const ProductsGrid = (props) => {

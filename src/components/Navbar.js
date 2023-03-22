@@ -11,7 +11,9 @@ const Navbar = ({cartItems}) => {
 
   return (
     <nav className='nav-bar'>
-      <h1>Warrior's Surplus</h1>
+      <Link to='/'>
+        <h1>Warrior's Surplus</h1>
+      </Link>
       <ul className='nav-list'>
         <li>
           <Link to='/'>Home</Link>

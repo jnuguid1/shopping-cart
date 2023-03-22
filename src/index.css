@@ -1,9 +1,13 @@
 :root {
   --font-primary: black;
-  --font-secondary: white;
+  --font-secondary: grey;
+  --nav-font: white;
+  --page-padding: 28px 20px 56px 110px;
+  --button-secondary: rgb(0, 130, 72);
+  font-family: 'Lato', sans-serif;
 }
 
-body, h1, h2, p, li, ul {
+body, h1, h2, h3, p, li, ul {
   padding: 0;
   margin: 0;
 }
@@ -12,11 +16,18 @@ li {
   list-style: none;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+/** Nav Bar */
+
 .nav-bar {
-  padding: 18px;
+  padding: var(--page-padding);
+  padding-bottom: 28px;
   display: flex;
   background-color: rgb(38, 38, 38);
-  color: var(--font-secondary);
+  color: var(--nav-font);
 }
 
 .nav-list {
@@ -24,14 +35,275 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 56px;
 }
 
-.nav-list a:visited {
+.nav-list a:visited,
+a:visited {
+  color: var(--nav-font);
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/** Common components */
+
+.page {
+  padding: var(--page-padding);
+}
+
+.page h2 {
+  margin-bottom: 32px;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.items-grid {
+  padding: 0px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.category, .card-category {
   color: var(--font-secondary);
 }
 
-.nav-list a:link {
-  text-decoration: none;
+.generic-button {
+  padding: 8px;
+  background-color: white;
+  border: none;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.action-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  color: white;
+  border: none;
+  background-color: var(--button-secondary);
+}
+
+.secondary-action-button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  color: black;
+  background-color: var(--button-primary);
+  border: grey solid 1px;
+}
+
+/** Store */
+
+.store-body {
+  display: flex;
+}
+
+.store-categories {
+  min-width: 10%;
+  margin-right: 42px;
+}
+
+.store-categories li {
+  margin-bottom: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.store-categories li:hover {
+  text-decoration: underline;
+}
+
+/** Product Card */
+
+.product-card img {
+  margin-bottom: 12px;
+}
+
+.product-card p {
+  color: var(--font-primary);
+  margin-bottom: 4px;
+}
+
+.product-card .card-category {
+  margin-bottom: 12px;
+}
+
+/** Product Page */
+
+.product-page {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  margin-top: 36px;
+}
+
+.product-page h2 {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.product-info {
+  min-width: 25%;
+}
+
+.product-info p {
+  margin-bottom: 8px;
+}
+
+.product-info .item-quantity {
+  margin: 16px 0 8px 0;
+}
+
+/** Cart */
+.cart-body {
+  display: flex;
+  gap: 24px;
+}
+
+.cart-section-left {
+  min-width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-section-right {
+  min-width: 30%;
+}
+
+.cart-list {
+  width: 100%;
+}
+
+.cart-item {
+  display: flex;
+  gap: 32px;
+  padding: 16px;
+}
+
+.cart-item-info {
+  width: 50%;
+}
+
+.cart-item-info > p,
+.cart-item-info > div,
+.cart-item-info > button {
+  margin-bottom: 12px;
+}
+
+.cart-empty {
+  font-size: 24px;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-row .price {
+  font-weight: 600;
+}
+
+/** Cart Summary */
+
+.cart-summary {
+  padding: 0px 48px;
+}
+
+.cart-summary h3 {
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+}
+
+.cart-summary div {
+  margin-bottom: 12px;
+}
+
+/** Quantity */
+
+.quantity-input,
+.item-quantity button {
+  font-size: 1rem;
+}
+
+.quantity-input {
+  padding: 8px;
+  text-align: center;
+  width: 28px;
+  border: none;
+}
+
+.quantity-input:focus {
+  outline: none;
+}
+
+.item-quantity {
+  width: fit-content;
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  padding: 4px;
+}
+
+.item-quantity button {
+  padding: 8px;
+  background-color: white;
+  border: none;
+}
+
+/** Drawer */
+.drawer-container h2 {
+  margin-bottom: 16px;
+}
+
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 30%;
+  padding: 48px;
+  box-sizing: border-box;
+  background-color: white;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  right: 0px;
+  transform: translate(100%);
+  overflow: auto;
+}
+
+.drawer-container-open {
+  transform: translate(0);
+}
+
+.page-mask {
+  transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.drawer-container .subtotal-label {
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  align-self: flex-end;
+}
+
+.drawer-container .subtotal {
+  font-size: 1.3rem;
+  align-self: flex-end;
+  margin-bottom: 12px;
 }
 

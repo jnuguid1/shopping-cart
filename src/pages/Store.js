@@ -5,13 +5,15 @@ import CategoryList from '../components/CategoryList';
 const Store = (props) => {
 
   return (
-    <div>
+    <div className='page'>
       <h2>Store</h2>
-      <CategoryList
-        categories={props.categories}
-        onCategoryChange={props.onCategoryChange}  
-      />
-      <ProductsGrid products={props.products} />
+      <div className='store-body'>
+        <CategoryList
+          categories={props.categories}
+          onCategoryChange={props.onCategoryChange}
+        />
+        <ProductsGrid products={props.products} />
+      </div>
     </div>
   );
 };

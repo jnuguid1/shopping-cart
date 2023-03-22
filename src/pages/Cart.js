@@ -4,17 +4,22 @@ import CartSummary from '../components/CartSummary';
 
 const Cart = (props) => {
   return (
-    <div>
+    <div className='page'>
       <h2>Cart</h2>
-      <CartList
-        items={props.items}
-        onQuantityIncrement={props.onQuantityIncrement}
-        onQuantityDecrement={props.onQuantityDecrement}
-        onQuantityChange={props.onQuantityChange}
-        onRemoveFromCart={props.onRemoveFromCart}
-      />
-      <CartSummary items={props.items} />
-      <button type='button'>Checkout</button>
+      <div className='cart-body'>
+        <div className='cart-section-left'>
+          <CartList
+            items={props.items}
+            onQuantityIncrement={props.onQuantityIncrement}
+            onQuantityDecrement={props.onQuantityDecrement}
+            onQuantityChange={props.onQuantityChange}
+            onRemoveFromCart={props.onRemoveFromCart}
+          />
+        </div>
+        <div className='cart-section-right'>
+          <CartSummary items={props.items} />
+        </div>
+      </div>
     </div>
   );
 };
