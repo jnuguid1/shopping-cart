@@ -17,7 +17,7 @@ const CartItem = (props) => {
         <p>{item.name}</p>
         <div className='info-row'>
           <p className='category'>{item.category}</p>
-          <p className='price'>${item.price}</p>
+          <p className='price'>${item.price.toFixed(2)}</p>
         </div>
         <ItemQuantity
           quantity={quantity}

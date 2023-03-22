@@ -14,7 +14,7 @@ const App = () => {
       name: 'Hayabusa T3 Boxing Gloves',
       price: 199.00,
       category: 'Boxing Gloves',
-      image: 'hayabusa-t3.jpg',
+      image: 'hayabusa-t3.png',
       id: uniqid(),
       code: 'gloves',
     },
@@ -22,7 +22,7 @@ const App = () => {
       name: 'Everlast Pro Style Elite Training Gloves',
       price: 32.99,
       category: 'Boxing Gloves',
-      image: 'everlast-pro-training.jpg',
+      image: 'everlast-pro-training.png',
       id: uniqid(),
       code: 'gloves',
     },
@@ -30,7 +30,7 @@ const App = () => {
       name: 'UNIQ Khaki Velcro Boxing Gloves',
       price: 102,
       category: 'Boxing Gloves',
-      image: 'uniq-khaki-velcro.jpg',
+      image: 'uniq-khaki-velcro.png',
       id: uniqid(),
       code: 'gloves',
     },
@@ -38,7 +38,7 @@ const App = () => {
       name: 'RDX Training Boxing Gloves',
       price: 53.99,
       category: 'Boxing Gloves',
-      image: 'kara-training.jpg',
+      image: 'kara-training.png',
       id: uniqid(),
       code: 'gloves',
     },
@@ -46,7 +46,7 @@ const App = () => {
       name: 'Venum Challenge 2.0 Boxing Gloves',
       price: 68.87,
       category: 'Boxing Gloves',
-      image: 'venum-challenger.jpg',
+      image: 'venum-challenger.png',
       id: uniqid(),
       code: 'gloves',
     },
@@ -54,7 +54,7 @@ const App = () => {
       name: 'Verace Black & Gold Boxing Gloves',
       price: 1411,
       category: 'Boxing Gloves',
-      image: 'versace-black-and-gold.jpg',
+      image: 'versace-black-and-gold.png',
       id: uniqid(),
       code: 'gloves',
     },
@@ -62,7 +62,7 @@ const App = () => {
       name: 'Adidas Men\'s HVC 2',
       price: 69.52,
       category: 'Boxing Shoes',
-      image: 'adidas-hvc.jpg',
+      image: 'adidas-hvc.png',
       id: uniqid(),
       code: 'shoes',
     },
@@ -78,7 +78,7 @@ const App = () => {
       name: 'Everlast Elite Black High Top Boxing Shoes',
       price: 149.99,
       category: 'Boxing Shoes',
-      image: 'everlast-elite-black-high-top.jpg',
+      image: 'everlast-elite-black-high-top.png',
       id: uniqid(),
       code: 'shoes',
     },
@@ -107,14 +107,6 @@ const App = () => {
       code: 'shoes',
     },
     {
-      name: 'Shock Doctor Core Supporter with Bio-flex Cup',
-      price: 25,
-      category: 'No-Foul & Groin Protectors',
-      image: 'core-supporter.webp',
-      id: uniqid(),
-      code: 'groin'
-    },
-    {
       name: 'Hayabusa Steel Armored Cup',
       price: 35,
       category: 'No-Foul & Groin Protectors',
@@ -126,7 +118,7 @@ const App = () => {
       name: 'Rival RNFL 10 Pro 360 Protector',
       price: 105,
       category: 'No-Foul & Groin Protectors',
-      image: 'rival-rnfl-10-pro.jpg',
+      image: 'rival-rnfl-10-pro.png',
       id: uniqid(),
       code: 'groin'
     },
@@ -134,7 +126,7 @@ const App = () => {
       name: 'Shock Doctor Ultra Pro Supporter',
       price: 40,
       category: 'No-Foul & Groin Protectors',
-      image: 'shock-doctor-ultra-pro-supporter_.jpg',
+      image: 'shock-doctor-ultra-pro-supporter_.png',
       id: uniqid(),
       code: 'groin'
     },
@@ -142,7 +134,7 @@ const App = () => {
       name: 'Rival RHG60 Workout Headgear 2.0',
       price: 65,
       category: 'Head Gear',
-      image: 'rival-rhg60.webp',
+      image: 'rival-rhg60.png',
       id: uniqid(),
       code: 'headGear',
     },
@@ -150,7 +142,7 @@ const App = () => {
       name: 'Hayabusa T3 Headgear',
       price: 150,
       category: 'Head Gear',
-      image: 'hayabusa-t3-helmet.jpg',
+      image: 'hayabusa-t3-helmet.png',
       id: uniqid(),
       code: 'headGear',
     },
@@ -158,7 +150,7 @@ const App = () => {
       name: 'Velo Competition Headgear',
       price: 135,
       category: 'Head Gear',
-      image: 'velo-headgear.jpg',
+      image: 'velo-headgear.png',
       id: uniqid(),
       code: 'headGear',
     },
@@ -166,7 +158,7 @@ const App = () => {
       name: 'Rival Mexican Handwraps 180',
       price: 12,
       category: 'Hand Wraps',
-      image: 'mexican-handwraps.webp',
+      image: 'mexican-handwraps.png',
       id: uniqid(),
       code: 'handWraps',
     },
@@ -174,7 +166,7 @@ const App = () => {
       name: 'Hayabusa Quick Gelwraps',
       price: 30,
       category: 'Hand Wraps',
-      image: 'hayabusa-quick-gelwraps.jpg',
+      image: 'hayabusa-quick-gelwraps.png',
       id: uniqid(),
       code: 'handWraps',
     },
@@ -182,7 +174,7 @@ const App = () => {
       name: 'Fox40 Mouthguard',
       price: 3,
       category: 'Mouth Guards',
-      image: 'fox40-mouthguard.jpg',
+      image: 'fox40-mouthguard.png',
       id: uniqid(),
       code: 'mouthGuards',
     },
@@ -198,7 +190,7 @@ const App = () => {
       name: 'Hayabusa Combat Mouth Guard',
       price: 20,
       category: 'Mouth Guards',
-      image: 'hayabusa-combat-mouthguard_.jpg',
+      image: 'hayabusa-combat-mouthguard_.png',
       id: uniqid(),
       code: 'mouthGuards',
     },
@@ -206,7 +198,7 @@ const App = () => {
       name: 'Twins SR2 Heavy Jump Rope',
       price: 40,
       category: 'Jump Rope',
-      image: 'sr2-heavy-rope.webp',
+      image: 'sr2-heavy-rope.png',
       id: uniqid(),
       code: 'jumpRope',
     },
@@ -214,7 +206,7 @@ const App = () => {
       name: 'Rival Plastic Jump Rope 9FT',
       price: 15,
       category: 'Jump Rope',
-      image: 'rival-plastic-jump-rope.webp',
+      image: 'rival-plastic-jump-rope.png',
       id: uniqid(),
       code: 'jumpRope',
     },
@@ -222,7 +214,7 @@ const App = () => {
       name: 'Ring to Cage Plastic Jump Rope',
       price: 12,
       category: 'Jump Rope',
-      image: 'cage-plastic-jump-rope.jpg',
+      image: 'cage-plastic-jump-rope.png',
       id: uniqid(),
       code: 'jumpRope',
     },
@@ -247,7 +239,6 @@ const App = () => {
     getItems('shoes')[0],
     getItems('headGear')[0],
   ]);
-
 
   const [currentProducts, setCurrentProducts] = useState(getItems('gloves'));
   const [cartItems, setCartItems] = useState([]);
@@ -326,12 +317,15 @@ const App = () => {
   };
   
   const handleQuantityInputChange = (amount) => {
-    if (amount >= 0) setQuantityInput(parseInt(amount));
+    if (amount === '') {
+      setQuantityInput(amount);
+    } else {
+      if (amount >= 0) setQuantityInput(parseInt(amount));
+    }
   };
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
-
   }
 
   return (

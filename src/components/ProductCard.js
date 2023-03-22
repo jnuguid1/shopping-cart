@@ -6,8 +6,8 @@ const ProductCard = (props) => {
       <img 
         src={require(`../assets/${props.image}`)}
         alt={props.name}
-        height={380}
-        width={380}
+        height={340}
+        width={340}
       />
       <p className='card-name'>{props.name}</p>
       <p className='card-category'>{props.category}</p>
