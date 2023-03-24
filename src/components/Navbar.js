@@ -12,7 +12,7 @@ const Navbar = ({cartItems}) => {
   return (
     <nav className='nav-bar'>
       <Link to='/'>
-        <h1>Warrior's Surplus</h1>
+        <h1>The Armory</h1>
       </Link>
       <ul className='nav-list'>
         <li>
@@ -21,8 +21,11 @@ const Navbar = ({cartItems}) => {
         <li>
           <Link to='/store'>Store</Link>
         </li>
-        <li>
-          <Link to='/cart'>Cart {itemQuantity}</Link>
+        <li className='cart-link'>
+          <Link to='/cart'>
+            <p className='quantity-label'>{itemQuantity}</p>
+            <i className="fa-solid fa-cart-shopping"></i>
+          </Link>
         </li>
       </ul>
     </nav>

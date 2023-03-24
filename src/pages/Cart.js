@@ -4,7 +4,7 @@ import CartSummary from '../components/CartSummary';
 
 const Cart = (props) => {
   return (
-    <div className='page'>
+    <div className='page cart'>
       <h2>Cart</h2>
       <div className='cart-body'>
         <div className='cart-section-left'>
@@ -14,10 +14,11 @@ const Cart = (props) => {
             onQuantityDecrement={props.onQuantityDecrement}
             onQuantityChange={props.onQuantityChange}
             onRemoveFromCart={props.onRemoveFromCart}
+            closeDrawer={props.closeDrawer}
           />
         </div>
         <div className='cart-section-right'>
-          <CartSummary items={props.items} />
+          <CartSummary items={props.items} onCheckout={props.onCheckout} />
         </div>
       </div>
     </div>

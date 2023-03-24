@@ -10,7 +10,9 @@ const CartDrawer =
   onQuantityDecrement,
   onQuantityChange,
   onRemoveFromCart,
-  toggleDrawer
+  toggleDrawer,
+  onCheckout,
+  closeDrawer,
 }) => {
 
   const [subtotal, setSubtotal] = useState(0);
@@ -31,10 +33,19 @@ const CartDrawer =
         onQuantityDecrement={onQuantityDecrement}
         onQuantityChange={onQuantityChange}
         onRemoveFromCart={onRemoveFromCart}
+        closeDrawer={closeDrawer}
+
       />
       <p className='subtotal-label'>Subtotal</p>
       <p className='subtotal'>${subtotal.toFixed(2)}</p>
-      <button className='action-button' type='button'>Checkout</button>
+      <Link to='/' onClick={onCheckout}>
+        <button
+          className='action-button'
+          type='button'
+        >
+          Checkout        
+        </button>
+      </Link>
       <Link to='/cart' onClick={toggleDrawer}>
         <button
           className='secondary-action-button'

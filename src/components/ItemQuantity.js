@@ -7,7 +7,7 @@ const ItemQuantity = (props) => {
         type='button'
         onClick={e => props.onQuantityDecrement(props.item, e)}
       >
-        -
+        <i className="fa-solid fa-minus fa-xs"></i>
       </button>
       <input
         className='quantity-input' 
@@ -20,7 +20,7 @@ const ItemQuantity = (props) => {
         onClick={e => props.onQuantityIncrement(props.item, e)}
         type='button'
       >
-        +
+        <i className="fa-solid fa-plus fa-xs"></i>
       </button>
     </div>
   );

@@ -12,7 +12,7 @@ const ProductQuantity = ({onInputChange, value}) => {
         type='button'
         onClick={e => onInputChange(value-1)}
       >
-        -
+        <i className="fa-solid fa-minus fa-xs"></i>
       </button>
       <input
         className='quantity-input' 
@@ -25,7 +25,7 @@ const ProductQuantity = ({onInputChange, value}) => {
         onClick={e => onInputChange(value+1)}
         type='button'
       >
-        +
+        <i className="fa-solid fa-plus fa-xs"></i>
       </button>
     </div>
   );

@@ -238,6 +238,7 @@ const App = () => {
     getItems('gloves')[0],
     getItems('shoes')[0],
     getItems('headGear')[0],
+    getItems('groin')[0],
   ]);
 
   const [currentProducts, setCurrentProducts] = useState(getItems('gloves'));
@@ -320,13 +321,22 @@ const App = () => {
     if (amount === '') {
       setQuantityInput(amount);
     } else {
-      if (amount >= 0) setQuantityInput(parseInt(amount));
+      if (amount > 0) setQuantityInput(parseInt(amount));
     }
   };
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
-  }
+  };
+
+  const closeDrawer = () => {
+    setDrawerOpen(false);
+  };
+
+  const resetCart = () => {
+    setCartItems([]);
+    setDrawerOpen(false);
+  };
 
   return (
     <div>
@@ -344,6 +354,8 @@ const App = () => {
           onQuantityChange={handleQuantityChange}
           onRemoveFromCart={handleRemoveFromCart}
           toggleDrawer={toggleDrawer}
+          onCheckout={resetCart}
+          closeDrawer={closeDrawer}
         />
         <Navbar cartItems={cartItems} />
         <Routes>
@@ -379,6 +391,8 @@ const App = () => {
                 onQuantityDecrement={handleQuantityDecrement}
                 onQuantityChange={handleQuantityChange}
                 onRemoveFromCart={handleRemoveFromCart}
+                onCheckout={resetCart}
+                closeDrawer={closeDrawer}
               />
             }
           />

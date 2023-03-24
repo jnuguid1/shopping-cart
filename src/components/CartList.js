@@ -1,5 +1,6 @@
 import React from 'react';
 import CartItem from './CartItem';
+import {Link} from 'react-router-dom';
 
 const CartList = (props) => {
   const hasItems = props.items.length > 0;
@@ -23,7 +24,12 @@ const CartList = (props) => {
             )
           })}
         </ul>
-        : <p className='cart-empty'>Your cart is empty</p>
+        : <div className='cart-empty'>
+            <p>Your cart is empty</p>
+            <Link to='/store' onClick={props.closeDrawer}>
+              <p className='small-label' >Continue shopping</p>
+            </Link>
+          </div>
       }
     </>
   );

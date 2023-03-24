@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const CartSummary = ({items}) => {
+const CartSummary = ({items, onCheckout}) => {
   const TAX = 0.13;
   const [subtotal, setSubtotal] = useState(0);
   useEffect(() => {
@@ -28,7 +29,9 @@ const CartSummary = ({items}) => {
         <p>Total</p>
         <p>${(Math.round(subtotal*1.13*100)/100).toFixed(2)}</p>
       </div>
-      <button className='action-button' type='button'>Checkout</button>
+      <Link to='/' onClick={onCheckout}>
+        <button className='action-button' type='button'>Checkout</button>
+      </Link>
     </div>
   );
 };
