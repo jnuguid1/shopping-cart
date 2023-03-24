@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.86dbf14c.css",
-    "main.js": "/shopping-cart/static/js/main.61ba8456.js",
+    "main.js": "/shopping-cart/static/js/main.b66fae03.js",
     "static/media/landing.jpg": "/shopping-cart/static/media/landing.e19f98fe2b81bae9672b.jpg",
     "static/media/hayabusa-steel-armored-cup.png": "/shopping-cart/static/media/hayabusa-steel-armored-cup.174be83cb2fff01e2ca2.png",
     "static/media/landing2.jpg": "/shopping-cart/static/media/landing2.fafd36ea17903b48d890.jpg",
@@ -34,10 +34,10 @@
     "static/media/placeholder.png": "/shopping-cart/static/media/placeholder.ef382014635795af383f.png",
     "index.html": "/shopping-cart/index.html",
     "main.86dbf14c.css.map": "/shopping-cart/static/css/main.86dbf14c.css.map",
-    "main.61ba8456.js.map": "/shopping-cart/static/js/main.61ba8456.js.map"
+    "main.b66fae03.js.map": "/shopping-cart/static/js/main.b66fae03.js.map"
   },
   "entrypoints": [
     "static/css/main.86dbf14c.css",
-    "static/js/main.61ba8456.js"
+    "static/js/main.b66fae03.js"
   ]
 }
