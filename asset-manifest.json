@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.86dbf14c.css",
+    "main.js": "/shopping-cart/static/js/main.1c54f9d8.js",
+    "static/media/landing.jpg": "/shopping-cart/static/media/landing.e19f98fe2b81bae9672b.jpg",
+    "static/media/hayabusa-steel-armored-cup.png": "/shopping-cart/static/media/hayabusa-steel-armored-cup.174be83cb2fff01e2ca2.png",
+    "static/media/landing2.jpg": "/shopping-cart/static/media/landing2.fafd36ea17903b48d890.jpg",
+    "static/media/versace-black-and-gold.png": "/shopping-cart/static/media/versace-black-and-gold.f193cd2904bbee96008e.png",
+    "static/media/hayabusa-t3.png": "/shopping-cart/static/media/hayabusa-t3.6f65df5463801c5115bc.png",
+    "static/media/uniq-khaki-velcro.png": "/shopping-cart/static/media/uniq-khaki-velcro.26056e4281401b05580e.png",
+    "static/media/everlast-pro-training.png": "/shopping-cart/static/media/everlast-pro-training.b501d7952b1b1fed2eb4.png",
+    "static/media/adidas-hvc.png": "/shopping-cart/static/media/adidas-hvc.cb79bcda372d0869da6f.png",
+    "static/media/hayabusa-t3-helmet.png": "/shopping-cart/static/media/hayabusa-t3-helmet.f6b0ced45f7ff73f249f.png",
+    "static/media/velo-headgear.png": "/shopping-cart/static/media/velo-headgear.738887fd799293cce289.png",
+    "static/media/venum-challenger.png": "/shopping-cart/static/media/venum-challenger.5c37d5826403fcde79dc.png",
+    "static/media/viper-shoes.png": "/shopping-cart/static/media/viper-shoes.a5705d229f9edf64e1cd.png",
+    "static/media/hayabusa-quick-gelwraps.png": "/shopping-cart/static/media/hayabusa-quick-gelwraps.95719ed1ce1943ad91f5.png",
+    "static/media/rival-rhg60.png": "/shopping-cart/static/media/rival-rhg60.d93ca7e1ab0e1e220db4.png",
+    "static/media/kara-training.png": "/shopping-cart/static/media/kara-training.4f54ddabe4e276e34f83.png",
+    "static/media/fox40-mouthguard.png": "/shopping-cart/static/media/fox40-mouthguard.e9c132b88c965dc3ef90.png",
+    "static/media/landing-img.jpg": "/shopping-cart/static/media/landing-img.6f1c2d4b781f5d1e936f.jpg",
+    "static/media/everlast-elite-black-high-top.png": "/shopping-cart/static/media/everlast-elite-black-high-top.46f4508fe170603bc687.png",
+    "static/media/cage-plastic-jump-rope.png": "/shopping-cart/static/media/cage-plastic-jump-rope.f68c865c58f9eab0bb3a.png",
+    "static/media/shock-doctor-ultra-pro-supporter_.png": "/shopping-cart/static/media/shock-doctor-ultra-pro-supporter_.1d3e633b59664a25a893.png",
+    "static/media/asics-matflex-6.webp": "/shopping-cart/static/media/asics-matflex-6.a4af979f7229adf1b1a2.webp",
+    "static/media/rival-rnfl-10-pro.png": "/shopping-cart/static/media/rival-rnfl-10-pro.cd08ced4343f00639620.png",
+    "static/media/rival-plastic-jump-rope.png": "/shopping-cart/static/media/rival-plastic-jump-rope.c2210f255aa47f6bfc86.png",
+    "static/media/sr2-heavy-rope.png": "/shopping-cart/static/media/sr2-heavy-rope.c9a65d3bf0a1cd2ec0ab.png",
+    "static/media/hayabusa-combat-mouthguard_.png": "/shopping-cart/static/media/hayabusa-combat-mouthguard_.58fea0f7e8a14f768499.png",
+    "static/media/venum-elite.webp": "/shopping-cart/static/media/venum-elite.f4cf58aad2b7e591af29.webp",
+    "static/media/mexican-handwraps.png": "/shopping-cart/static/media/mexican-handwraps.e59b1bcc54fdb0cd4fa2.png",
+    "static/media/rival-rsx-genesis.webp": "/shopping-cart/static/media/rival-rsx-genesis.87a35308faf7bcec237a.webp",
+    "static/media/leone-mouthguard.webp": "/shopping-cart/static/media/leone-mouthguard.9e0dca82506ef5ffbd4b.webp",
+    "static/media/placeholder.png": "/shopping-cart/static/media/placeholder.ef382014635795af383f.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.86dbf14c.css.map": "/shopping-cart/static/css/main.86dbf14c.css.map",
+    "main.1c54f9d8.js.map": "/shopping-cart/static/js/main.1c54f9d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86dbf14c.css",
+    "static/js/main.1c54f9d8.js"
+  ]
+}
