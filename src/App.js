@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Store from './pages/Store';
 import uniqid from 'uniqid';
 import Product from './pages/Product';
+import { HashRouter } from 'react-router-dom';
 
 const App = () => {
   const [products] = useState([
@@ -339,66 +340,64 @@ const App = () => {
   };
 
   return (
-    <div>
-      <BrowserRouter>
-        <div 
-          className={`${drawerOpen ? 'page-mask' : ''}`}
-          onClick={toggleDrawer}
-        >
-        </div>
-        <CartDrawer 
-          isOpen={drawerOpen} 
-          items={cartItems}
-          onQuantityIncrement={handleQuantityIncrement}
-          onQuantityDecrement={handleQuantityDecrement}
-          onQuantityChange={handleQuantityChange}
-          onRemoveFromCart={handleRemoveFromCart}
-          toggleDrawer={toggleDrawer}
-          onCheckout={resetCart}
-          closeDrawer={closeDrawer}
+    <BrowserRouter basename='/shopping-cart' >
+      <div 
+        className={`${drawerOpen ? 'page-mask' : ''}`}
+        onClick={toggleDrawer}
+      >
+      </div>
+      <CartDrawer 
+        isOpen={drawerOpen} 
+        items={cartItems}
+        onQuantityIncrement={handleQuantityIncrement}
+        onQuantityDecrement={handleQuantityDecrement}
+        onQuantityChange={handleQuantityChange}
+        onRemoveFromCart={handleRemoveFromCart}
+        toggleDrawer={toggleDrawer}
+        onCheckout={resetCart}
+        closeDrawer={closeDrawer}
+      />
+      <Navbar cartItems={cartItems} />
+      <Routes>
+        <Route path='/' element={<Home featuredItems={featuredItems} />} />
+        <Route 
+          path='/store' 
+          element={
+            <Store 
+              products={currentProducts} 
+              categories={categories} 
+              onCategoryChange={handleCategoryChange}
+            />
+          } 
         />
-        <Navbar cartItems={cartItems} />
-        <Routes>
-          <Route path='/' element={<Home featuredItems={featuredItems} />} />
-          <Route 
-            path='/store' 
-            element={
-              <Store 
-                products={currentProducts} 
-                categories={categories} 
-                onCategoryChange={handleCategoryChange}
-              />
-            } 
-          />
-          <Route 
-            path='/store/:id'
-            element={
-              <Product 
-                products={products}
-                quantityInput={quantityInput}
-                onQuantityChange={handleQuantityInputChange}
-                onAddToCart={handleAddToCart}
-                isDrawerOpen={drawerOpen}
-              />
-            } 
-          />
-          <Route 
-            path='/cart'
-            element={
-              <Cart 
-                items={cartItems}
-                onQuantityIncrement={handleQuantityIncrement}
-                onQuantityDecrement={handleQuantityDecrement}
-                onQuantityChange={handleQuantityChange}
-                onRemoveFromCart={handleRemoveFromCart}
-                onCheckout={resetCart}
-                closeDrawer={closeDrawer}
-              />
-            }
-          />
-        </Routes>
-      </BrowserRouter>
-    </div>
+        <Route 
+          path='/store/:id'
+          element={
+            <Product 
+              products={products}
+              quantityInput={quantityInput}
+              onQuantityChange={handleQuantityInputChange}
+              onAddToCart={handleAddToCart}
+              isDrawerOpen={drawerOpen}
+            />
+          } 
+        />
+        <Route 
+          path='/cart'
+          element={
+            <Cart 
+              items={cartItems}
+              onQuantityIncrement={handleQuantityIncrement}
+              onQuantityDecrement={handleQuantityDecrement}
+              onQuantityChange={handleQuantityChange}
+              onRemoveFromCart={handleRemoveFromCart}
+              onCheckout={resetCart}
+              closeDrawer={closeDrawer}
+            />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
 
   );
 };
